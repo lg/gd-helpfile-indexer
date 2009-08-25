@@ -1,0 +1,37 @@
+// LarrysHelpFileIndexer.idl : IDL source for LarrysHelpFileIndexer
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (LarrysHelpFileIndexer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(5920BE6D-2550-4107-9BB3-6A225C3E1B9C),
+	dual,
+	nonextensible,
+	helpstring("ILarrysHelpFileIndexerObj Interface"),
+	pointer_default(unique)
+]
+interface ILarrysHelpFileIndexerObj : IDispatch{
+	[id(1), helpstring("method HandleFile")] HRESULT HandleFile(BSTR RawFullPath, IDispatch* IFactory);
+};
+[
+	uuid(5D186002-576C-4487-94CE-413DB9A4C062),
+	version(1.0),
+	helpstring("LarrysHelpFileIndexer 1.0 Type Library")
+]
+library LarrysHelpFileIndexerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(F5916434-F60F-4764-AD71-6B1F341B5723),
+		helpstring("LarrysHelpFileIndexerObj Class")
+	]
+	coclass LarrysHelpFileIndexerObj
+	{
+		[default] interface ILarrysHelpFileIndexerObj;
+	};
+};

@@ -1,0 +1,28 @@
+Larry's Help File Indexer
+Larry Gadea, trivex@gmail.com
+http://www.github.com/larrygadea
+http://twitter.com/lg
+
+Licensed under LGPLv3 because of chmlib. See the included LICENSE file.
+
+This plugin allows you to index one of the most popular formats 
+for Windows help files, manuals and ebooks. Plugin source code is 
+available from trivex.net.
+
+This plugin works by extracting the contents of a CHM and indexing
+all of the individual HTML pages contained inside as text.
+
+To install, follow these instructions:
+   1. Run the "LarrysHelpFileIndexer.exe" file in the zip.
+   2. Agree to the registration with Google Desktop Search.
+   3. You're done! Your system will now be indexing CHM files.
+
+To uninstall, follow these instructions:
+
+   1. Go to your Start menu and select "Control Panel".
+   2. Select "Add/Remove Programs"
+   3. Find "Larry's Help File Indexer" and click "Remove".
+   4. Thats it!
+
+If you have any comments/concerns/questions/suggestions, whatever,
+feel free to contact me at trivex@trivex.net.
